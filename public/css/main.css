@@ -1,0 +1,92 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header, footer{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkred;
+    color: white;
+    background-color: rgb(80, 86, 100);
+}
+
+#content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: left;
+    height: 80%;
+   
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header div{
+    margin: 0 10px 0 5%;
+}
+
+#titre {
+    font-weight: bolder;
+    font-size: 50px;
+    color: black;
+}
+
+button{
+    background-color: rgb(59, 59, 59);
+    padding: 10px;
+    border: none;
+    color: aliceblue;
+    font-size: medium;
+    font-family: cursive;
+}
+
+
+.scrollable{
+    overflow-y: auto; 
+    max-height: 80%;
+    width: 100%;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+
+}
+
+.joke{
+    background-color: rgb(174, 179, 179);
+    padding: 10px;
+    display: flex;
+    font-size: xx-large;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border-width: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgb(170, 151, 151);
+    text-decoration: none;
+    color: black;
+}

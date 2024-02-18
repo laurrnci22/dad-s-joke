@@ -1,0 +1,18 @@
+
+<% if (typeof jokes !== 'undefined' ) { %>
+      
+    <% jokes.forEach(joke => { %>
+
+        <% if ( jokeId == joke.id){ %>
+
+            <div class="joke"><%= joke.joke %></div>
+        <% } %>
+
+    <% }); %>
+
+  <% } else { %>
+    There's no Joke yet!
+  <% } %>
+
+
+   

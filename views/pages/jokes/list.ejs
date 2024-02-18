@@ -1,0 +1,15 @@
+
+    <% if (typeof jokes !== 'undefined' ) { %>
+      
+      <% jokes.forEach(joke => { %>
+
+          <a href= <%= "/jokes/joke/" + joke.id %> class="joke"><%= joke.joke %></a>
+
+      <% }); %>
+
+    <% } else { %>
+      There's no Joke yet!
+    <% } %>
+
+  
+     

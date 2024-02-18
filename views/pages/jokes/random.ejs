@@ -1,0 +1,11 @@
+
+<% if (typeof jokes !== 'undefined' ) { %>
+
+    <% const jsonsize =  Object.keys(jokes).length;%>
+    <% const indiceRandom =  Math.floor(Math.random() * jsonsize) %>
+
+    <div class="joke"><%= jokes[indiceRandom].joke %></div>
+        
+<% } else { %>
+    There's no Joke yet!
+<% } %>
